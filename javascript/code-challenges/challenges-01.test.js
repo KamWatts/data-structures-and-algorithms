@@ -21,7 +21,7 @@ Write a function named `addExclamation` that takes an array of strings, and retu
 
 Use `forEach` to loop over the input array. Modify each string, and add the updated value into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
-;
+
 const addExclamation = (arr) => {
   let localArray = [];
   arr.forEach(element => localArray.push(element + '!'));
@@ -61,11 +61,11 @@ const greeting = (word) => {
 
 const speaker = (words, callback) => {
 
-  words.forEach((word) =>  {
+  words.forEach(word => {
     newStringArray.push(callback(word));
   });// Solution code here...
   return newStringArray;
-}
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -113,7 +113,10 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
-  // Solution code here...
+  let shoppingList = [];
+  availableItems.forEach(Item => {if (Item.available === true) shoppingList.push(Item.name);});
+
+  return shoppingList;
 };
 
 /* ------------------------------------------------------------------------------------------------
