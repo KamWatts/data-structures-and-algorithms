@@ -25,8 +25,8 @@ For example, typeNum([1, 'bob' ,3]) returns [1,3].
 
 const typeNum = (arr) => {
 
-  let newArr = arr.filter(i => typeof i !== 'string');
-  return newArr;
+  return arr.filter(i => typeof i !== 'string');
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -64,10 +64,9 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
 const notInFirstArray = (forbiddenValues, arr) => {
-  let newValues = arr.filter(value => {
-    return !forbiddenValues.includes(value);
-  });// Solution code here...
-  return newValues;
+
+  return arr.filter(value => !forbiddenValues.includes(value));
+
 };
 
 /* ------------------------------------------------------------------------------------------------
