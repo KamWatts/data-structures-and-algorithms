@@ -135,6 +135,17 @@ const reversedString = (str) => {
 
 }; // Solution code here...
 
+// An alternate way of solving this problem using split method in which turns each character in a word into a string value.
+
+let reversedString = (str) => {
+
+  let result = str.split('');
+  let reduced = result.reduce((acc, cur) => {
+    return cur + acc;
+  }, '')
+  console.log(reduced);
+  return result;
+}
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
