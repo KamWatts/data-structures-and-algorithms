@@ -26,7 +26,7 @@ const getNames = (arr) => {
   return arr.map((currentWord)=> {
     let makeArray = currentWord.name.split('');
     return makeArray.reverse().join('');
-  },);// Solution code here...
+  });// Solution code here...
 };
 
 
@@ -38,11 +38,8 @@ Write a function that appends ' The end.' to a string, and returns the modified 
 ------------------------------------------------------------------------------------------------ */
 
 const appendTheEnd = (str) => {
-  let ending = 'The end.'
-  return str.map((currentSentence) => {
-    currentSentence.join('');
-  })// Solution code here...
-};
+  return str + ' The end.';
+};// Solution code here...
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
