@@ -55,7 +55,7 @@ console.log(a) prints [1, 2, 3, 1]
 ------------------------------------------------------------------------------------------------ */
 
 const appendFirstToLast = (arr) => {
-  // Solution code here...
+  arr.push(arr[0]);// Solution code here...
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -74,7 +74,7 @@ console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
 ------------------------------------------------------------------------------------------------ */
 
 const addBirthYearProperty = (obj, year) => {
-  // Solution code here...
+  obj.yearBorn = year; // Solution code here...
 };
 
 /* ------------------------------------------------------------------------------------------------
