@@ -130,9 +130,24 @@ const gruffaloCrumble = {
 
 
 const listFoods = (recipe) => {
-  
+  let result = [];
+
+  recipe.ingredient.forEach((ingredient) => {
+    let firstSpace = ingredient.indexOf(' ');
+    let withoutAmount = ingredient.slice(firstSpace + 1);
+
+    let secondSpace = withoutAmount.indexOf(' ');
+    let withoutUnits = withoutAmount.slice(secondSpace + 1);
+
+    result.push(withoutUnits);
+  });
+  return result;
 };
 
+// Credit to instructor Sheyna Watkins for helping my understanding of question 6
+
+// .slice() - String method that extracts a section of a string and returns it as a new string
+// const str = 'The quick brown fox jumps over the lazy dog.'
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
