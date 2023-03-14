@@ -53,7 +53,7 @@ let characters = [
 ];
 
 const sortByChildren = (charArray) => {
-  charArray.sort((a,b) => b.characters.name -a.characters.name);
+  charArray.sort((a,b) => b.characters.name -a.characters.name);22
 };
 
 /* ------------------------------------------------------------------------------------------------
