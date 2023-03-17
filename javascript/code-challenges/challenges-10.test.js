@@ -7,9 +7,15 @@ Write a function named returnTen, takes in a string and uses split and splice to
 
 ------------------------------------------------------------------------------------------------ */
 
-function returnTen(str){
-  // Solution code here...
+function returnTen(str) {
+  if (str.length <= 10) {
+    return str.split('');
+  } else {
+    return str.split('').slice(-10);
+  }
 }
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -52,8 +58,15 @@ For example:
 return: 35
 ------------------------------------------------------------------------------------------------ */
 const totalSum = (matrix) => {
-
+  let sum = 0;
+  for (let i = 0; i < matrix.length; i++) {
+    for (let j = 0; j < matrix[i].length; j++) {
+      sum += matrix[i][j];
+    }
+  }
+  return sum;
 };
+
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -79,15 +92,17 @@ const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
 const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
+  const totalSales = [];
 
-  const totalSales = [];// Solution code here...
   for (let i = 0; i < hoursOpen.length; i++) {
     let sum = 0;
-    for (let j = 0; i < stores.length; i++) {
-      sum += stores[i][j];
+    for (let j = 0; j < stores.length; j++) {
+      sum += stores[j][i];
     }
     totalSales.push(sum);
   }
+
+  return totalSales;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -101,17 +116,19 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 ------------------------------------------------------------------------------------------------ */
 
 const salesData = (hours, data) => {
-  const salesArr = []
-  return hours.forEach((thisHour, idx) => {
+  const salesArr = [];
 
-    return {
+  hours.forEach((thisHour, idx) => {
+    const obj = {
       sales: `${data[idx]} cookies`,
       time: thisHour,
     };
-    salesArr.push(idx);
-  });// Solution code here...
+    salesArr.push(obj);
+  });
+
   return salesArr;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -135,8 +152,18 @@ const errands = [
 ];
 
 const howManyTreats = (arr) => {
-  // Solution code here...
+  return arr.reduce((acc, curr) => {
+    if (curr.store === 'Pet store') {
+      curr.items.forEach(item => {
+        if (item.name === 'Treats') {
+          acc += item.quantity;
+        }
+      });
+    }
+    return acc;
+  }, 0);
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
