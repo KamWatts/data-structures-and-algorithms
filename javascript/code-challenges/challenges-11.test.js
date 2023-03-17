@@ -14,7 +14,7 @@ For example:
 Becomes:
 [
 <li>name: bob</li>,
-<li>age: 32</li>
+<li>anpge: 32</li>
 ]
 ------------------------------------------------------------------------------------------------ */
 
@@ -37,12 +37,11 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 ------------------------------------------------------------------------------------------------ */
 
 const count = (target, input) => {
-  function count(num, arr) {
-    return arr.reduce((count, subArr) => {
-      return count + subArr.filter(elem => elem === num).length;
-    }, 0);
-  }// Solution code here...
+  return input.reduce((count, arr) => {
+    return count + arr.filter(num => num === target).length;
+  }, 0);
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -55,8 +54,11 @@ For example, [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]] returns 66.
 ------------------------------------------------------------------------------------------------ */
 
 const totalSum = (input) => {
-  // Solution code here...
+  return input.reduce((sum, arr) => {
+    return sum + arr.reduce((acc, num) => acc + num, 0);
+  }, 0);
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -140,8 +142,15 @@ let starWarsData = [{
 }];
 
 let findMaleAndFemale = (data) => {
-  // Solution code here...
+  let genders = ['male', 'female'];
+  let names = data
+    .filter(character => genders.includes(character.gender))
+    .map(character => character.name);
+  return names.join(' and ');
 };
+
+findMaleAndFemale(starWarsData);
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
