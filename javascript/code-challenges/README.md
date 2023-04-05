@@ -24,4 +24,12 @@ You can see the results of your tests online in the "Actions" tab of your reposi
 
 ## Assignment Submission
 
-When you finish the assignment each day, make a new pull request from your daily challenge branch to your master branch and submit the PR URL in Canvas. You can submit a link to a pull request even if the pull request is closed.
+### Whiteboard Mockups
+
+## Whiteboard Challenge #1
+
+![Whiteboard 1](/javascript/code-challenges/whiteboard1.png)
+
+## Whiteboard Challenge #2
+
+![Whiteboard 2](./whiteboard2.png)
