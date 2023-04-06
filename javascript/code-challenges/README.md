@@ -32,4 +32,8 @@ You can see the results of your tests online in the "Actions" tab of your reposi
 
 ## Whiteboard Challenge #2
 
-![Whiteboard 2](./whiteboard2.png)
+![Whiteboard 2](/javascript/code-challenges/whiteboard2.png)
+
+## Whiteboard Challenge #3
+
+![Whiteboard 3](/javascript/code-challenges/whiteboard3.png)
