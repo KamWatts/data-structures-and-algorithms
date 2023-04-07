@@ -134,9 +134,21 @@ Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
-  // Solution code here...
+  let newArray = arr.forEach( numberValue => {
+    if (numberValue % 3) {
+      return 'Fizz';
+    } else {
+      if (numberValue % 5) {
+        return 'Buzz';
+      } else {
+        if(numberValue % 3 && numberValue % 5) {
+          return 'FizzBuzz';
+        }
+      }
+    }
+  });
+  return newArray;
 };
-
 /* ------------------------------------------------------------------------------------------------
 TESTS
 
