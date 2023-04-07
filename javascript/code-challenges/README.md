@@ -24,16 +24,20 @@ You can see the results of your tests online in the "Actions" tab of your reposi
 
 ## Assignment Submission
 
-### Whiteboard Mockups
+## Whiteboard Mockups -
 
-## Whiteboard Challenge #1
+### Whiteboard Challenge #1
 
 ![Whiteboard 1](/javascript/code-challenges/whiteboard1.png)
 
-## Whiteboard Challenge #2
+### Whiteboard Challenge #2
 
 ![Whiteboard 2](/javascript/code-challenges/whiteboard2.png)
 
-## Whiteboard Challenge #3
+### Whiteboard Challenge #3
 
 ![Whiteboard 3](/javascript/code-challenges/whiteboard3.png)
+
+### Whiteboard Challenge #4
+
+![Whiteboard 4](/javascript/code-challenges/whiteboard4.png)
