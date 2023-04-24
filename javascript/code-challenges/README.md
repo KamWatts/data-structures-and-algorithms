@@ -66,3 +66,8 @@ You can see the results of your tests online in the "Actions" tab of your reposi
 ### Whiteboard Challenge 12
 
 ![Whiteboard 12](/javascript/code-challenges/whiteboard12.png)
+
+
+### Whiteboard Challenge 13
+
+![Whiteboard 13](/javascript/code-challenges/whiteboard13.png)
