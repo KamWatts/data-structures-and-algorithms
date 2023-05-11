@@ -21,4 +21,5 @@ To run your tests
 ### Table of Contents
 
 [JavaScript Files README](./javascript/README.md)
-[JavaScript Files](./javascript/code-challenges/)
+[Data Sturctures and Algorithms/Whiteboard Challenges](./javascript/code-challenges/)
+[Whiteboard Challenges](./javascript/code-challenges/)
